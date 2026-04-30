@@ -1,0 +1,22 @@
+BACKGROUND
+In this event, the athletes are competing in matches of tug-of-war. In each round, the team that wins the round depends on how hard the athletes collectively pull, based on their intrinsic strength modulated by other factors including how much effort they put in to that round.
+Athletes compete either individually or as a team.
+All matches take place on the same day.
+
+CONDITIONS
+In the first match, Peyton and Max beat Ness and Robin.
+In the second match, Peyton and Max lost to Ness and Robin.
+In the third match, Peyton and Max beat Ness and Blake.
+In the fourth match, Peyton and Max beat Ness and Casey.
+In the fifth match, Peyton and Max beat Ness and Kay.
+
+QUERIES
+Query 1: Out of 100 random athletes, where do you think Peyton ranks in terms of intrinsic strength?
+Query 2: Out of 100 random athletes, where do you think Max ranks in terms of intrinsic strength?
+Query 3: Out of 100 random athletes, where do you think Ness ranks in terms of intrinsic strength?
+Query 4: On a percentage scale from 0 to 100%, how much effort do you think Peyton put into the second match?
+Query 5: On a percentage scale from 0 to 100%, how much effort do you think Max put into the second match?
+Query 6: On a percentage scale from 0 to 100%, how much effort do you think Ness put into the second match?
+Query 7: In a new match later this same day between Peyton and Max (Team 1) and Ness and Robin (Team 2), who would win and by how much?
+Query 8: In a new match later this same day between Peyton and Max (Team 1) and Robin and Blake (Team 2), who would win and by how much?
+    

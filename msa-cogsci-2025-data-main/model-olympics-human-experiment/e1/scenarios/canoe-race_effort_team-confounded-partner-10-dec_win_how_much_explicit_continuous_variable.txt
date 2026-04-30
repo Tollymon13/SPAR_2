@@ -1,0 +1,30 @@
+BACKGROUND
+
+In this event, the athletes are competing in a series of canoe racing tournaments. Each tournament consists of a series of races. In each race, athletes compete as part of a team. 
+
+An athlete's intrinsic strength remains constant throughout a tournament. An athlete neither gets stronger nor weaker between races. You can assume that all matches take place on the same day.
+
+Athletes also vary in the effort that they put into any given race. Most of the time, people row with a moderately high amount of effort. Sometimes, an athlete won’t put in much effort and will row with only a fraction of their strength. Other times, they may put in a lot of effort and row extra hard, beyond what their intrinsic strength would suggest.
+
+How fast a team rows overall in any given race is determined by the average rowing speed of each athlete. How fast an athlete rows in a given race is determined by their intrinsic strength, modified by how much effort they put in (a lower fraction of their intrinsic strength if they don’t put in much effort, or even more than their strength if they put in more effort).
+
+The team that rows the fastest (highest team speed) in a given race wins.
+                   
+Athletes compete either individually or as a team.
+All matches take place on the same day.
+
+CONDITIONS
+In the first race, Gale and Emery lost to Kay and Indiana.
+In the second race, Gale and Emery lost to Fey and Quinn.
+In the third race, Gale and Emery lost to Jamie and Casey.
+
+QUERIES
+Query 1: Out of 100 random athletes, where do you think Gale ranks in terms of intrinsic strength?
+Query 2: Out of 100 random athletes, where do you think Emery ranks in terms of intrinsic strength?
+Query 3: Out of 100 random athletes, where do you think Jamie ranks in terms of intrinsic strength?
+Query 4: On a percentage scale from 0 to 100%, how much effort do you think Gale put into the third race?
+Query 5: On a percentage scale from 0 to 100%, how much effort do you think Emery put into the third race?
+Query 6: On a percentage scale from 0 to 100%, how much effort do you think Jamie put into the third race?
+Query 7: In a new race later this same day between Gale and Emery (Team 1) and Kay and Casey (Team 2), who would win and by how much?
+Query 8: In a new race later this same day between Gale and Kay (Team 1) and Emery and Indiana (Team 2), who would win and by how much?
+    

@@ -1,0 +1,34 @@
+BACKGROUND
+
+In this event, the athletes are competing in a series of biathlon relay tournaments, a winter sport that combines cross-country skiing races and rifle shooting. Each tournament consists of a series of rounds.
+
+In each round, athletes compete on teams. In a biathlon, each athlete first skis a short distance, then shoots at a target.
+
+Athletes are scored based on how fast they ski and how accurately they shoot. An athlete’s ability to ski is based on their intrinsic strength. Note that an athlete’s intrinsic strength remains constant throughout a tournament. An athlete neither gets stronger nor weaker between rounds. You can assume that all matches take place on the same day.
+
+An athlete’s ability to shoot accurately is unrelated to their intrinsic strength. An athlete who is intrinsically strong may be a very good shooter, a very bad shooter, or something in between. Athlete’s shooting accuracy in any given round is also somewhat down to chance. 
+
+A team’s overall score is determined by the sum of the scores for each athlete per event. Ski performance and shooting accuracy are weighted equally. Athletes receive more points for skiing faster and more points for achieving a high shooting accuracy.
+
+The team that completes the course with the highest score wins. 
+
+Athletes compete either individually or as a team.
+All matches take place on the same day.
+
+CONDITIONS
+In the first round, Peyton and Indiana beat Blake and Max.
+In the second round, Peyton and Indiana beat Casey and Fey.
+In the third round, Peyton and Indiana lost to Casey and Max.
+In the fourth round, Peyton and Indiana beat Blake and Casey.
+In the fifth round, Peyton and Indiana beat Fey and Max.
+
+QUERIES
+Query 1: Out of 100 random athletes, where do you think Peyton ranks in terms of intrinsic strength?
+Query 2: Out of 100 random athletes, where do you think Indiana ranks in terms of intrinsic strength?
+Query 3: Out of 100 random athletes, where do you think Casey ranks in terms of intrinsic strength?
+Query 4: On a percentage scale from 0 to 100%, how accurate do you think Peyton was at shooting in the third round?
+Query 5: On a percentage scale from 0 to 100%, how accurate do you think Indiana was at shooting in the third round?
+Query 6: On a percentage scale from 0 to 100%, how accurate do you think Casey was at shooting in the third round?
+Query 7: In a new round later this same day between Peyton and Indiana (Team 1) and Casey and Max (Team 2), who would win and by how much?
+Query 8: In a new round later this same day between Peyton and Blake (Team 1) and Indiana and Fey (Team 2), who would win and by how much?
+    

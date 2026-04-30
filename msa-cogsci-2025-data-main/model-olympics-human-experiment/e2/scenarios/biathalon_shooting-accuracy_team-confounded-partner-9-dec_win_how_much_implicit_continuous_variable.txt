@@ -1,0 +1,20 @@
+BACKGROUND
+In this event, teams of players are competing in rounds of a biathalon, a winter sport that combines cross-country skiing races and rifle shooting. In each round, the team that wins depends on the average speed with which the athletes are able to ski, based on their intrinsic strength, as well as each team member's shooting accuracy in that particular round.
+Athletes compete either individually or as a team.
+All matches take place on the same day.
+
+CONDITIONS
+In the first round, Robin and Ollie beat Lane and Ness.
+In the second round, Robin and Ollie beat Sam and Blake.
+In the third round, Robin and Ollie beat Val and Taylor.
+
+QUERIES
+Query 1: Out of 100 random athletes, where do you think Robin ranks in terms of intrinsic strength?
+Query 2: Out of 100 random athletes, where do you think Ollie ranks in terms of intrinsic strength?
+Query 3: Out of 100 random athletes, where do you think Sam ranks in terms of intrinsic strength?
+Query 4: On a percentage scale from 0 to 100%, how accurate do you think Robin was at shooting in the second round?
+Query 5: On a percentage scale from 0 to 100%, how accurate do you think Ollie was at shooting in the second round?
+Query 6: On a percentage scale from 0 to 100%, how accurate do you think Sam was at shooting in the second round?
+Query 7: In a new round later this same day between Robin and Ollie (Team 1) and Lane and Taylor (Team 2), who would win and by how much?
+Query 8: In a new round later this same day between Robin and Lane (Team 1) and Ollie and Ness (Team 2), who would win and by how much?
+    

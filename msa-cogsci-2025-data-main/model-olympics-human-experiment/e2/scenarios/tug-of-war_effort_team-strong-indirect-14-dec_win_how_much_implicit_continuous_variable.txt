@@ -1,0 +1,20 @@
+BACKGROUND
+In this event, the athletes are competing in matches of tug-of-war. In each round, the team that wins the round depends on how hard the athletes collectively pull, based on their intrinsic strength modulated by other factors including how much effort they put in to that round.
+Athletes compete either individually or as a team.
+All matches take place on the same day.
+
+CONDITIONS
+In the first match, Taylor and Indiana lost to Harper and Ollie.
+In the second match, Indiana and Casey beat Harper and Ollie.
+In the third match, Indiana and Sam beat Harper and Ollie.
+
+QUERIES
+Query 1: Out of 100 random athletes, where do you think Taylor ranks in terms of intrinsic strength?
+Query 2: Out of 100 random athletes, where do you think Indiana ranks in terms of intrinsic strength?
+Query 3: Out of 100 random athletes, where do you think Harper ranks in terms of intrinsic strength?
+Query 4: On a percentage scale from 0 to 100%, how much effort do you think Taylor put into the first match?
+Query 5: On a percentage scale from 0 to 100%, how much effort do you think Indiana put into the first match?
+Query 6: On a percentage scale from 0 to 100%, how much effort do you think Harper put into the first match?
+Query 7: In a new match later this same day between Taylor and Indiana (Team 1) and Casey and Harper (Team 2), who would win and by how much?
+Query 8: In a new match later this same day between Taylor and Harper (Team 1) and Indiana and Ollie (Team 2), who would win and by how much?
+    

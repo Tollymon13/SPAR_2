@@ -1,0 +1,20 @@
+BACKGROUND
+In this event, the athletes are competing in matches of tug-of-war. In each round, the team that wins the round depends on how hard the athletes collectively pull, based on their intrinsic strength modulated by other factors including how much effort they put in to that round.
+Athletes compete either individually or as a team.
+All matches take place on the same day.
+
+CONDITIONS
+In the first match, Harper and Taylor lost to Willow and Ness.
+In the second match, Harper and Taylor lost to Quinn and Gale.
+In the third match, Harper and Taylor lost to Kay and Max.
+
+QUERIES
+Query 1: Out of 100 random athletes, where do you think Harper ranks in terms of intrinsic strength?
+Query 2: Out of 100 random athletes, where do you think Taylor ranks in terms of intrinsic strength?
+Query 3: Out of 100 random athletes, where do you think Kay ranks in terms of intrinsic strength?
+Query 4: On a percentage scale from 0 to 100%, how much effort do you think Harper put into the third match?
+Query 5: On a percentage scale from 0 to 100%, how much effort do you think Taylor put into the third match?
+Query 6: On a percentage scale from 0 to 100%, how much effort do you think Kay put into the third match?
+Query 7: In a new match later this same day between Harper and Taylor (Team 1) and Willow and Max (Team 2), who would win and by how much?
+Query 8: In a new match later this same day between Harper and Willow (Team 1) and Taylor and Ness (Team 2), who would win and by how much?
+    

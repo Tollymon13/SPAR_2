@@ -1,0 +1,20 @@
+BACKGROUND
+In this event, the athletes are competing in matches of tug-of-war. In each round, the team that wins the round depends on how hard the athletes collectively pull, based on their intrinsic strength modulated by other factors including how much effort they put in to that round.
+Athletes compete either individually or as a team.
+All matches take place on the same day.
+
+CONDITIONS
+In the first match, Jamie and Lane beat Val and Emery.
+In the second match, Jamie and Harper beat Fey and Drew.
+In the third match, Jamie and Taylor beat Ollie and Blake.
+
+QUERIES
+Query 1: Out of 100 random athletes, where do you think Jamie ranks in terms of intrinsic strength?
+Query 2: Out of 100 random athletes, where do you think Lane ranks in terms of intrinsic strength?
+Query 3: Out of 100 random athletes, where do you think Val ranks in terms of intrinsic strength?
+Query 4: On a percentage scale from 0 to 100%, how much effort do you think Jamie put into the second match?
+Query 5: On a percentage scale from 0 to 100%, how much effort do you think Lane put into the first match?
+Query 6: On a percentage scale from 0 to 100%, how much effort do you think Val put into the first match?
+Query 7: In a new match later this same day between Jamie and Lane (Team 1) and Val and Drew (Team 2), who would win and by how much?
+Query 8: In a new match later this same day between Jamie and Val (Team 1) and Lane and Emery (Team 2), who would win and by how much?
+    

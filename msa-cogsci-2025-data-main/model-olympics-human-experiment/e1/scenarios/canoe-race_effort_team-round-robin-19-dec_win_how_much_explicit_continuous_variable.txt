@@ -1,0 +1,30 @@
+BACKGROUND
+
+In this event, the athletes are competing in a series of canoe racing tournaments. Each tournament consists of a series of races. In each race, athletes compete as part of a team. 
+
+An athlete's intrinsic strength remains constant throughout a tournament. An athlete neither gets stronger nor weaker between races. You can assume that all matches take place on the same day.
+
+Athletes also vary in the effort that they put into any given race. Most of the time, people row with a moderately high amount of effort. Sometimes, an athlete won’t put in much effort and will row with only a fraction of their strength. Other times, they may put in a lot of effort and row extra hard, beyond what their intrinsic strength would suggest.
+
+How fast a team rows overall in any given race is determined by the average rowing speed of each athlete. How fast an athlete rows in a given race is determined by their intrinsic strength, modified by how much effort they put in (a lower fraction of their intrinsic strength if they don’t put in much effort, or even more than their strength if they put in more effort).
+
+The team that rows the fastest (highest team speed) in a given race wins.
+                   
+Athletes compete either individually or as a team.
+All matches take place on the same day.
+
+CONDITIONS
+In the first race, Sam and Val beat Casey and Robin.
+In the second race, Sam and Casey beat Val and Robin.
+In the third race, Sam and Robin beat Val and Casey.
+
+QUERIES
+Query 1: Out of 100 random athletes, where do you think Sam ranks in terms of intrinsic strength?
+Query 2: Out of 100 random athletes, where do you think Val ranks in terms of intrinsic strength?
+Query 3: Out of 100 random athletes, where do you think Robin ranks in terms of intrinsic strength?
+Query 4: On a percentage scale from 0 to 100%, how much effort do you think Sam put into the second race?
+Query 5: On a percentage scale from 0 to 100%, how much effort do you think Val put into the second race?
+Query 6: On a percentage scale from 0 to 100%, how much effort do you think Robin put into the second race?
+Query 7: In a new race later this same day between Sam and Val (Team 1) and Casey and Gale (Team 2), who would win and by how much?
+Query 8: In a new race later this same day between Sam and Casey (Team 1) and Val and Gale (Team 2), who would win and by how much?
+    

@@ -1,0 +1,20 @@
+BACKGROUND
+In this event, the athletes are competing in a series of canoe races. In each race, the team that wins depends on the average speed with which the athletes are able to row, based on their intrinsic strength modulated by other factors including how much effort they put in to that race.
+Athletes compete either individually or as a team.
+All matches take place on the same day.
+
+CONDITIONS
+In the first race, Casey and Robin lost to Lane and Ness.
+In the second race, Casey and Robin lost to Ollie and Sam.
+In the third race, Casey and Robin lost to Quinn and Indiana.
+
+QUERIES
+Query 1: Out of 100 random athletes, where do you think Casey ranks in terms of intrinsic strength?
+Query 2: Out of 100 random athletes, where do you think Robin ranks in terms of intrinsic strength?
+Query 3: Out of 100 random athletes, where do you think Quinn ranks in terms of intrinsic strength?
+Query 4: On a percentage scale from 0 to 100%, how much effort do you think Casey put into the third race?
+Query 5: On a percentage scale from 0 to 100%, how much effort do you think Robin put into the third race?
+Query 6: On a percentage scale from 0 to 100%, how much effort do you think Quinn put into the third race?
+Query 7: In a new race later this same day between Casey and Robin (Team 1) and Lane and Indiana (Team 2), who would win and by how much?
+Query 8: In a new race later this same day between Casey and Lane (Team 1) and Robin and Ness (Team 2), who would win and by how much?
+    

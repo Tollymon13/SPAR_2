@@ -1,0 +1,22 @@
+BACKGROUND
+In this event, teams of players are competing in rounds of a biathalon, a winter sport that combines cross-country skiing races and rifle shooting. In each round, the team that wins depends on the average speed with which the athletes are able to ski, based on their intrinsic strength, as well as each team member's shooting accuracy in that particular round.
+Athletes compete either individually or as a team.
+All matches take place on the same day.
+
+CONDITIONS
+In the first round, Quinn and Lane beat Ness and Drew.
+In the second round, Quinn and Lane lost to Ness and Drew.
+In the third round, Quinn and Lane beat Ness and Indiana.
+In the fourth round, Quinn and Lane beat Ness and Ollie.
+In the fifth round, Quinn and Lane beat Ness and Sam.
+
+QUERIES
+Query 1: Out of 100 random athletes, where do you think Quinn ranks in terms of intrinsic strength?
+Query 2: Out of 100 random athletes, where do you think Lane ranks in terms of intrinsic strength?
+Query 3: Out of 100 random athletes, where do you think Ness ranks in terms of intrinsic strength?
+Query 4: On a percentage scale from 0 to 100%, how accurate do you think Quinn was at shooting in the second round?
+Query 5: On a percentage scale from 0 to 100%, how accurate do you think Lane was at shooting in the second round?
+Query 6: On a percentage scale from 0 to 100%, how accurate do you think Ness was at shooting in the second round?
+Query 7: In a new round later this same day between Quinn and Lane (Team 1) and Ness and Drew (Team 2), who would win and by how much?
+Query 8: In a new round later this same day between Quinn and Lane (Team 1) and Drew and Indiana (Team 2), who would win and by how much?
+    

@@ -1,0 +1,20 @@
+BACKGROUND
+In this event, the athletes are competing in a series of canoe races. In each race, the team that wins depends on the average speed with which the athletes are able to row, based on their intrinsic strength modulated by other factors including how much effort they put in to that race.
+Athletes compete either individually or as a team.
+All matches take place on the same day.
+
+CONDITIONS
+In the first race, Val and Ollie beat Indiana and Kay.
+In the second race, Ollie and Sam lost to Indiana and Kay.
+In the third race, Ollie and Emery lost to Indiana and Kay.
+
+QUERIES
+Query 1: Out of 100 random athletes, where do you think Val ranks in terms of intrinsic strength?
+Query 2: Out of 100 random athletes, where do you think Ollie ranks in terms of intrinsic strength?
+Query 3: Out of 100 random athletes, where do you think Indiana ranks in terms of intrinsic strength?
+Query 4: On a percentage scale from 0 to 100%, how much effort do you think Val put into the first race?
+Query 5: On a percentage scale from 0 to 100%, how much effort do you think Ollie put into the first race?
+Query 6: On a percentage scale from 0 to 100%, how much effort do you think Indiana put into the first race?
+Query 7: In a new race later this same day between Val and Ollie (Team 1) and Sam and Indiana (Team 2), who would win and by how much?
+Query 8: In a new race later this same day between Val and Indiana (Team 1) and Ollie and Kay (Team 2), who would win and by how much?
+    

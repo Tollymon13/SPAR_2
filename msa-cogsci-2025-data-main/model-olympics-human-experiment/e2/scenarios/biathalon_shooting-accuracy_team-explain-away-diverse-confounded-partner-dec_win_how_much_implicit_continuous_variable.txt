@@ -1,0 +1,22 @@
+BACKGROUND
+In this event, teams of players are competing in rounds of a biathalon, a winter sport that combines cross-country skiing races and rifle shooting. In each round, the team that wins depends on the average speed with which the athletes are able to ski, based on their intrinsic strength, as well as each team member's shooting accuracy in that particular round.
+Athletes compete either individually or as a team.
+All matches take place on the same day.
+
+CONDITIONS
+In the first round, Lane and Blake beat Taylor and Kay.
+In the second round, Lane and Blake beat Robin and Fey.
+In the third round, Lane and Blake lost to Robin and Kay.
+In the fourth round, Lane and Blake beat Taylor and Robin.
+In the fifth round, Lane and Blake beat Fey and Kay.
+
+QUERIES
+Query 1: Out of 100 random athletes, where do you think Lane ranks in terms of intrinsic strength?
+Query 2: Out of 100 random athletes, where do you think Blake ranks in terms of intrinsic strength?
+Query 3: Out of 100 random athletes, where do you think Robin ranks in terms of intrinsic strength?
+Query 4: On a percentage scale from 0 to 100%, how accurate do you think Lane was at shooting in the third round?
+Query 5: On a percentage scale from 0 to 100%, how accurate do you think Blake was at shooting in the third round?
+Query 6: On a percentage scale from 0 to 100%, how accurate do you think Robin was at shooting in the third round?
+Query 7: In a new round later this same day between Lane and Blake (Team 1) and Robin and Kay (Team 2), who would win and by how much?
+Query 8: In a new round later this same day between Lane and Taylor (Team 1) and Blake and Fey (Team 2), who would win and by how much?
+    

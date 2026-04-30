@@ -1,0 +1,21 @@
+BACKGROUND
+In this event, the athletes are competing in matches of tug-of-war. In each round, the team that wins the round depends on how hard the athletes collectively pull, based on their intrinsic strength modulated by other factors including how much effort they put in to that round.
+Athletes compete either individually or as a team.
+All matches take place on the same day.
+
+CONDITIONS
+In the first match, Sam and Gale lost to Jamie and Lane.
+In the second match, Sam and Max lost to Jamie and Ollie.
+In the third match, Sam and Avery lost to Jamie and Quinn.
+In the fourth match, Sam and Gale beat Jamie and Lane.
+
+QUERIES
+Query 1: Out of 100 random athletes, where do you think Sam ranks in terms of intrinsic strength?
+Query 2: Out of 100 random athletes, where do you think Gale ranks in terms of intrinsic strength?
+Query 3: Out of 100 random athletes, where do you think Jamie ranks in terms of intrinsic strength?
+Query 4: On a percentage scale from 0 to 100%, how much effort do you think Sam put into the fourth match?
+Query 5: On a percentage scale from 0 to 100%, how much effort do you think Gale put into the fourth match?
+Query 6: On a percentage scale from 0 to 100%, how much effort do you think Jamie put into the fourth match?
+Query 7: In a new match later this same day between Sam and Gale (Team 1) and Max and Quinn (Team 2), who would win and by how much?
+Query 8: In a new match later this same day between Sam and Jamie (Team 1) and Gale and Lane (Team 2), who would win and by how much?
+    

@@ -1,0 +1,20 @@
+BACKGROUND
+In this event, teams of players are competing in rounds of a biathalon, a winter sport that combines cross-country skiing races and rifle shooting. In each round, the team that wins depends on the average speed with which the athletes are able to ski, based on their intrinsic strength, as well as each team member's shooting accuracy in that particular round.
+Athletes compete either individually or as a team.
+All matches take place on the same day.
+
+CONDITIONS
+In the first round, Jamie and Blake lost to Willow and Ness.
+In the second round, Jamie and Willow lost to Blake and Ness.
+In the third round, Jamie and Ness lost to Blake and Willow.
+
+QUERIES
+Query 1: Out of 100 random athletes, where do you think Jamie ranks in terms of intrinsic strength?
+Query 2: Out of 100 random athletes, where do you think Blake ranks in terms of intrinsic strength?
+Query 3: Out of 100 random athletes, where do you think Willow ranks in terms of intrinsic strength?
+Query 4: On a percentage scale from 0 to 100%, how accurate do you think Jamie was at shooting in the second round?
+Query 5: On a percentage scale from 0 to 100%, how accurate do you think Blake was at shooting in the second round?
+Query 6: On a percentage scale from 0 to 100%, how accurate do you think Willow was at shooting in the second round?
+Query 7: In a new round later this same day between Jamie and Blake (Team 1) and Willow and Taylor (Team 2), who would win and by how much?
+Query 8: In a new round later this same day between Jamie and Willow (Team 1) and Blake and Taylor (Team 2), who would win and by how much?
+    

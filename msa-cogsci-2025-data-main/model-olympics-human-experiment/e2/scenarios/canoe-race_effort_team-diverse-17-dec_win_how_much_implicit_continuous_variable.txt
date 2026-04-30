@@ -1,0 +1,20 @@
+BACKGROUND
+In this event, the athletes are competing in a series of canoe races. In each race, the team that wins depends on the average speed with which the athletes are able to row, based on their intrinsic strength modulated by other factors including how much effort they put in to that race.
+Athletes compete either individually or as a team.
+All matches take place on the same day.
+
+CONDITIONS
+In the first race, Kay and Drew beat Harper and Peyton.
+In the second race, Kay and Val beat Casey and Ness.
+In the third race, Kay and Emery beat Sam and Avery.
+
+QUERIES
+Query 1: Out of 100 random athletes, where do you think Kay ranks in terms of intrinsic strength?
+Query 2: Out of 100 random athletes, where do you think Drew ranks in terms of intrinsic strength?
+Query 3: Out of 100 random athletes, where do you think Harper ranks in terms of intrinsic strength?
+Query 4: On a percentage scale from 0 to 100%, how much effort do you think Kay put into the second race?
+Query 5: On a percentage scale from 0 to 100%, how much effort do you think Drew put into the first race?
+Query 6: On a percentage scale from 0 to 100%, how much effort do you think Harper put into the first race?
+Query 7: In a new race later this same day between Kay and Drew (Team 1) and Harper and Ness (Team 2), who would win and by how much?
+Query 8: In a new race later this same day between Kay and Harper (Team 1) and Drew and Peyton (Team 2), who would win and by how much?
+    

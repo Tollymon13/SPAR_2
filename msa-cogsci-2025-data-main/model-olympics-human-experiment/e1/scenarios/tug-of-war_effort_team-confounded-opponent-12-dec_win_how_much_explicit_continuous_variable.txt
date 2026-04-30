@@ -1,0 +1,29 @@
+BACKGROUND
+In this event, the athletes are competing in tug-of-war tournaments. Each tournament consists of a series of matches. In each match, athletes compete as part of a team. 
+
+An athlete’s intrinsic strength remains constant throughout a tournament. An athlete neither gets stronger nor weaker between matches. You can assume that all matches take place on the same day.
+
+Athletes also vary in the effort that they put into any given match. Most of the time, people pull with a moderately high amount of effort. Sometimes, an athlete won’t put in much effort and will pull with only a fraction of their strength. Other times, they may put in a lot of effort and pull extra hard, beyond what their intrinsic strength would suggest.
+
+How hard a team pulls overall in any given match is determined by the total amount that all of the athletes on the team pull in that match. How hard each athlete pulls in a given match is determined by their intrinsic strength, modified by how much effort they put in (a lower fraction of their intrinsic strength if they don’t put in much effort, or even more than their strength if they put in more effort).
+
+The team that pulls the hardest in a given match wins.
+ 
+Athletes compete either individually or as a team.
+All matches take place on the same day.
+
+CONDITIONS
+In the first match, Indiana and Lane lost to Taylor and Ness.
+In the second match, Indiana and Casey lost to Taylor and Avery.
+In the third match, Indiana and Kay lost to Taylor and Fey.
+
+QUERIES
+Query 1: Out of 100 random athletes, where do you think Indiana ranks in terms of intrinsic strength?
+Query 2: Out of 100 random athletes, where do you think Lane ranks in terms of intrinsic strength?
+Query 3: Out of 100 random athletes, where do you think Taylor ranks in terms of intrinsic strength?
+Query 4: On a percentage scale from 0 to 100%, how much effort do you think Indiana put into the second match?
+Query 5: On a percentage scale from 0 to 100%, how much effort do you think Lane put into the first match?
+Query 6: On a percentage scale from 0 to 100%, how much effort do you think Taylor put into the second match?
+Query 7: In a new match later this same day between Indiana and Lane (Team 1) and Casey and Fey (Team 2), who would win and by how much?
+Query 8: In a new match later this same day between Indiana and Taylor (Team 1) and Lane and Ness (Team 2), who would win and by how much?
+    

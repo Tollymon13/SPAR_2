@@ -1,0 +1,21 @@
+BACKGROUND
+In this event, the athletes are competing in matches of tug-of-war. In each round, the team that wins the round depends on how hard the athletes collectively pull, based on their intrinsic strength modulated by other factors including how much effort they put in to that round.
+Athletes compete either individually or as a team.
+All matches take place on the same day.
+
+CONDITIONS
+In the first match, Val and Peyton beat Drew and Kay.
+In the second match, Val and Avery beat Drew and Robin.
+In the third match, Val and Max beat Drew and Blake.
+In the fourth match, Val and Peyton lost to Drew and Kay.
+
+QUERIES
+Query 1: Out of 100 random athletes, where do you think Val ranks in terms of intrinsic strength?
+Query 2: Out of 100 random athletes, where do you think Peyton ranks in terms of intrinsic strength?
+Query 3: Out of 100 random athletes, where do you think Drew ranks in terms of intrinsic strength?
+Query 4: On a percentage scale from 0 to 100%, how much effort do you think Val put into the fourth match?
+Query 5: On a percentage scale from 0 to 100%, how much effort do you think Peyton put into the fourth match?
+Query 6: On a percentage scale from 0 to 100%, how much effort do you think Drew put into the fourth match?
+Query 7: In a new match later this same day between Val and Peyton (Team 1) and Avery and Blake (Team 2), who would win and by how much?
+Query 8: In a new match later this same day between Val and Drew (Team 1) and Peyton and Kay (Team 2), who would win and by how much?
+    

@@ -1,0 +1,20 @@
+BACKGROUND
+In this event, the athletes are competing in matches of tug-of-war. In each round, the team that wins the round depends on how hard the athletes collectively pull, based on their intrinsic strength modulated by other factors including how much effort they put in to that round.
+Athletes compete either individually or as a team.
+All matches take place on the same day.
+
+CONDITIONS
+In the first match, Kay and Ollie lost to Willow and Max.
+In the second match, Kay and Willow lost to Ollie and Max.
+In the third match, Kay and Max lost to Ollie and Willow.
+
+QUERIES
+Query 1: Out of 100 random athletes, where do you think Kay ranks in terms of intrinsic strength?
+Query 2: Out of 100 random athletes, where do you think Ollie ranks in terms of intrinsic strength?
+Query 3: Out of 100 random athletes, where do you think Willow ranks in terms of intrinsic strength?
+Query 4: On a percentage scale from 0 to 100%, how much effort do you think Kay put into the second match?
+Query 5: On a percentage scale from 0 to 100%, how much effort do you think Ollie put into the second match?
+Query 6: On a percentage scale from 0 to 100%, how much effort do you think Willow put into the second match?
+Query 7: In a new match later this same day between Kay and Ollie (Team 1) and Willow and Emery (Team 2), who would win and by how much?
+Query 8: In a new match later this same day between Kay and Willow (Team 1) and Ollie and Emery (Team 2), who would win and by how much?
+    

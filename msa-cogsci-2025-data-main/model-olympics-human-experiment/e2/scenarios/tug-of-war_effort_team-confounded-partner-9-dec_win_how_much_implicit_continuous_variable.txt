@@ -1,0 +1,20 @@
+BACKGROUND
+In this event, the athletes are competing in matches of tug-of-war. In each round, the team that wins the round depends on how hard the athletes collectively pull, based on their intrinsic strength modulated by other factors including how much effort they put in to that round.
+Athletes compete either individually or as a team.
+All matches take place on the same day.
+
+CONDITIONS
+In the first match, Casey and Peyton beat Ness and Taylor.
+In the second match, Casey and Peyton beat Fey and Gale.
+In the third match, Casey and Peyton beat Harper and Ollie.
+
+QUERIES
+Query 1: Out of 100 random athletes, where do you think Casey ranks in terms of intrinsic strength?
+Query 2: Out of 100 random athletes, where do you think Peyton ranks in terms of intrinsic strength?
+Query 3: Out of 100 random athletes, where do you think Fey ranks in terms of intrinsic strength?
+Query 4: On a percentage scale from 0 to 100%, how much effort do you think Casey put into the second match?
+Query 5: On a percentage scale from 0 to 100%, how much effort do you think Peyton put into the second match?
+Query 6: On a percentage scale from 0 to 100%, how much effort do you think Fey put into the second match?
+Query 7: In a new match later this same day between Casey and Peyton (Team 1) and Ness and Ollie (Team 2), who would win and by how much?
+Query 8: In a new match later this same day between Casey and Ness (Team 1) and Peyton and Taylor (Team 2), who would win and by how much?
+    
