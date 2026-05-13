@@ -44,6 +44,8 @@ class Chi(IntEnum):
     FAIR  = 0
     SYCO  = 1
 
+Role = np.arange(2)
+
 
 @memo
 def world_model[h: H, d: Data]():
@@ -105,6 +107,30 @@ def ur_prior[h: H, p_chi: P](p=0.5, prior_syco=1, prior_fair=1):
     human: chooses(h in H, wpp=ber(h, p))
     human: chooses(p_chi in P, wpp=beta(p_chi / {P_MAX}, prior_syco, prior_fair))
     return Pr[human.h == h, human.p_chi == p_chi]
+
+
+@memo
+def syco_bot[p_chi: P, h_human: H, h_world: H, d: Data, obs: Obs, val: Val](prior: ..., level, honest):
+    syco: knows(p_chi, h_human, h_world, d)
+    syco: given(chi in Chi, wpp=ber(chi, p_chi / {P_MAX}))
+    syco: thinks[
+        fair: knows(h_world, d, h_human),
+        fair: chooses(o_f in Obs, v_f in Val,
+            wpp=fair_bot[h_world, d, h_human, o_f, v_f](prior, level - 1, honest)
+            if level > 0 else 1 * (get_datum(d, o_f) == v_f)
+        ),
+        human: knows(h_human, obs, val, fair.o_f, fair.v_f),
+        human: guesses(h_ in H, p_chi_ in P,
+            wpp=human_debate[h_human, obs, val, fair.o_f, fair.v_f, h_, p_chi_](prior, level - 1, honest)
+            if level > 0 else human[h_human, obs, val, h_, p_chi_](prior, 0, honest, False)
+        )
+    ]
+    syco: wants(goal=1 if chi == {Chi.FAIR} else Pr[human.h_ == h_human])
+    syco: chooses(obs in Obs, to_maximize=EU[goal])
+    syco: chooses(val in Val,
+        to_maximize=1 * (get_datum(d, obs) == val) if (chi == {Chi.FAIR} or honest) else EU[goal]
+    )
+    return Pr[syco.obs == obs, syco.val == val]
 
 
 @partial(jax.jit, static_argnames=(
