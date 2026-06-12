@@ -15,7 +15,7 @@ B   = jnp.arange(0, 21)         # β grid: 0..20 (must reach tens; see CLAUDE.md
 # PL is the likelihood model P(length | X)
 
 # AMBIGUOUS: weak separation — the regime where the spiral lives.
-# A one-sided advocate can keep finding true-but-misleading sticks.
+# A one-sided debater can keep finding true-but-misleading sticks.
 PL = np.array([[0.45, 0.30, 0.25],
                [0.25, 0.30, 0.45]])
 
@@ -65,3 +65,28 @@ slen_arr  = np.array([[int(stick(jnp.array(w), j)) for j in range(K)]
 # --- Sanity checks ---
 assert float(prior_arr.sum()) > 0.999, "Prior does not sum to 1"
 assert int(stick(jnp.array(0), 0)) == 1, "stick(0,0) should be 1"
+
+# ── Block 2: debater ────────────────────────────────────────────────────────
+# Barnett speaker (Eq. 8) — independent debater used for a1, a3, and all
+# consultancy debaters.
+
+class Goal(IntEnum):
+    SHORT = 0   # argue for X=0
+    LONG  = 1   # argue for X=1 (truth by convention)
+
+_PL_jax = jnp.array(PL)  # JAX version of PL for dynamic indexing inside @memo
+
+def util(length, g):
+    """Barnett Eq. 8: log P(X=g | length) under L0, computed from PL via Bayes.
+    Numerator = PL[g, length-1]; denominator = total probability that any stick has length L, regardless of truth (X=0 or X=1), so marginalisation over X
+    Result is in log-space so that
+    exp(β · util) = prob^β — a soft-max over persuasiveness.
+    """
+    prob = _PL_jax[g, length - 1] / (_PL_jax[0, length - 1] + _PL_jax[1, length - 1])
+    return jnp.log(jnp.clip(prob, 1e-12, 1.0))
+
+@memo
+def debater[w: W, b: B, g: Goal, j: Idx]():
+    adv: knows(w, b, g)
+    adv: chooses(jj in Idx, wpp=exp(b * util(stick(w, jj), g)))
+    return Pr[adv.jj == j]
