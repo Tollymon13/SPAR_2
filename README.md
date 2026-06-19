@@ -1,1 +1,1 @@
-SPAR Project modelling cognitive surrender, and possible mitigations via Bayesian Thought partners.
+Synthetic Implementation of AI Debate in memo probabilistic DSL. 
