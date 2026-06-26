@@ -97,7 +97,7 @@ def S1[w: W, b: B, g: Goal, j: Idx]():
 
 StkIdx = jnp.arange(N)  # domain for conditioning on the revealed stick's value index
 
-# Pragmatic Judge
+# Pragmatic Judge — single reveal
 
 @memo
 def J1[V: StkIdx, g: Goal](prior_b: ...):
@@ -108,8 +108,28 @@ def J1[V: StkIdx, g: Goal](prior_b: ...):
         spk: knows(gen.w, gen.b, g),
         spk: chooses(jj in Idx, wpp=S1[gen.w, gen.b, g, jj]())  # speaker picks a position
     ]
-    # Judge sees the VALUE of whichever stick the speaker chose — not the position itself.
+    # Judge sees the VALUE of whichever stick the speaker chose
     judge: observes_event(wpp=(stick_idx(gen.w, spk.jj) == V))
+    return E[judge[Pr[is_long(gen.w)]]]
+
+
+# Pragmatic Judge debate
+# Protocol: debate = (g1=LONG, g2=SHORT)
+
+@memo
+def J1_two[J1: Idx, J2: Idx, V1: StkIdx, V2: StkIdx, g1: Goal, g2: Goal](prior_b: ...):
+    judge: knows(g1, g2, J1, J2, V1, V2)
+    judge: thinks[
+        gen: chooses(w in W, wpp=piw(w)),
+        gen: chooses(b in B, wpp=array_index(prior_b, b)),
+        a1: knows(gen.w, gen.b, g1),
+        a1: chooses(j1 in Idx, wpp=S1[gen.w, gen.b, g1, j1]()),
+        a2: knows(gen.w, gen.b, a1.j1, g2),
+        a2: chooses(j2 in Idx, wpp=(j2 != a1.j1) * S1[gen.w, gen.b, g2, j2]())
+    ]
+    judge: observes [a1.j1] is J1
+    judge: observes [a2.j2] is J2
+    judge: observes_event(wpp=(stick_idx(gen.w, J1) == V1) * (stick_idx(gen.w, J2) == V2))
     return E[judge[Pr[is_long(gen.w)]]]
 
 
