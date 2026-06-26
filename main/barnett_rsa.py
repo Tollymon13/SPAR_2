@@ -13,9 +13,11 @@ W   = jnp.arange(N**K)   # world indices 0 .. N^K - 1
 Idx = jnp.arange(K)      # stick positions 0 .. K-1
 
 
+_N_pow = jnp.array([N**j for j in range(K)])  # [1, 9, 81, ...] — concrete at trace time
+
 def stick_idx(w, j):
     """Value index (0..N-1) of stick j in world w."""
-    return (w // int(N**j)) % N
+    return (w // _N_pow[j]) % N
 
 
 def stick_val(w, j):
@@ -61,5 +63,26 @@ def _compute_J0(K, sticks):
 J0_long    = _compute_J0(K, np.array(STICKS)) # P(long | revealed=v)
 lnJ0       = jnp.array(np.log(np.clip(J0_long,      1e-12, 1.0)))  # log P(long | v)
 lnJ0_short = jnp.array(np.log(np.clip(1 - J0_long, 1e-12, 1.0)))  # log P(short | v)
+
+
+
+class Goal(IntEnum):
+    SHORT = 0
+    LONG  = 1
+
+# beta grid
+B = jnp.array([0, 2, 5, 10, 20])
+
+
+def util(val_idx, g):
+    """Log J0 probability under goal g — the speaker's per-stick utility."""
+    return jnp.where(g == int(Goal.LONG), lnJ0[val_idx], lnJ0_short[val_idx])
+
+# Strategic Speaker
+@memo
+def S1[w: W, b: B, g: Goal, j: Idx]():
+    spk: knows(w, b, g)
+    spk: chooses(jj in Idx, wpp=exp(b * util(stick_idx(w, jj), g)))
+    return Pr[spk.jj == j]
 
 
