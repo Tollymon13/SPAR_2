@@ -70,19 +70,46 @@ class Goal(IntEnum):
     SHORT = 0
     LONG  = 1
 
-# beta grid
-B = jnp.array([0, 2, 5, 10, 20])
+# beta grid — B is an index axis (0..4); B_vals holds the actual beta values
+B_vals = jnp.array([0.0, 2.0, 5.0, 10.0, 20.0])
+B = jnp.arange(len(B_vals))  # 0..4
+
+# Precomputed scaled log-utilities: lnJ0_scaled[b_idx, val_idx] = B_vals[b_idx] * lnJ0[val_idx]
+lnJ0_scaled       = jnp.outer(B_vals, lnJ0)
+lnJ0_short_scaled = jnp.outer(B_vals, lnJ0_short)
 
 
-def util(val_idx, g):
-    """Log J0 probability under goal g — the speaker's per-stick utility."""
-    return jnp.where(g == int(Goal.LONG), lnJ0[val_idx], lnJ0_short[val_idx])
+def util(b_idx, val_idx, g):
+    """Scaled log J0 utility for beta index b_idx, stick value index val_idx, goal g."""
+    return jnp.where(
+        g == int(Goal.LONG),
+        lnJ0_scaled[b_idx, val_idx],
+        lnJ0_short_scaled[b_idx, val_idx],
+    )
 
 # Strategic Speaker
 @memo
 def S1[w: W, b: B, g: Goal, j: Idx]():
     spk: knows(w, b, g)
-    spk: chooses(jj in Idx, wpp=exp(b * util(stick_idx(w, jj), g)))
+    spk: chooses(jj in Idx, wpp=exp(util(b, stick_idx(w, jj), g)))
     return Pr[spk.jj == j]
+
+
+StkIdx = jnp.arange(N)  # domain for conditioning on the revealed stick's value index
+
+# Pragmatic Judge
+
+@memo
+def J1[V: StkIdx, g: Goal](prior_b: ...):
+    judge: knows(g, V)                                           # judge knows goal and revealed value
+    judge: thinks[
+        gen: chooses(w in W, wpp=piw(w)),                        # prior over worlds
+        gen: chooses(b in B, wpp=array_index(prior_b, b)),       # judge's prior over beta
+        spk: knows(gen.w, gen.b, g),
+        spk: chooses(jj in Idx, wpp=S1[gen.w, gen.b, g, jj]())  # speaker picks a position
+    ]
+    # Judge sees the VALUE of whichever stick the speaker chose — not the position itself.
+    judge: observes_event(wpp=(stick_idx(gen.w, spk.jj) == V))
+    return E[judge[Pr[is_long(gen.w)]]]
 
 
