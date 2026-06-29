@@ -22,8 +22,23 @@ for bv in betas_to_plot:
     J1_table = np.array(J1(delta(b_indices[bv])))  # shape (N, 2); computes posterior for both
     LONG_J1[bv] = J1_table[:, int(Goal.LONG)]   # P(long | v, LONG speaker, beta=bv); LONG only
 
-# Validation
-print("J0(long | v=0.5):", round(float(J0_long[4]), 4))
-for bv in betas_to_plot:
-    print(f"J1(long | v=0.5, beta={bv}):", round(float(LONG_J1[bv][4]), 4))
+# Plot
+fig, ax = plt.subplots(figsize=(6, 4.5))
+colors = ['#4393c3', '#f4a261', '#e76f51', '#7b1d0e']
 
+ax.axhline(0.5, color='k', lw=0.8, ls='--', alpha=0.4)
+ax.plot(sticks_np, J0_long, 'k-o', lw=1.8, ms=5, label='J0 (literal)')
+for bv, col in zip(betas_to_plot[1:], colors[1:]):
+    ax.plot(sticks_np, LONG_J1[bv], '-o', lw=1.8, ms=5, color=col,
+            label=f'J1 beta={bv}')
+ax.set_xlabel('stick value u')
+ax.set_ylabel('P(long | u revealed)')
+ax.set_title('Single speaker (LONG-biased)\nliteral J0 vs pragmatic J1')
+ax.legend(fontsize=8, loc='upper left')
+ax.set_ylim(-0.05, 1.05)
+ax.set_xlim(0.05, 0.95)
+
+plt.tight_layout()
+plt.savefig('figure3.pdf', bbox_inches='tight')
+plt.savefig('figure3.png', bbox_inches='tight', dpi=150)
+print('Saved figure3.pdf / .png')
